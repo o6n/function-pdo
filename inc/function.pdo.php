@@ -3,7 +3,7 @@
     function __connetti(){
         $conn =	null;
         try {
-            $conn = new PDO(DB_ENGIME.':host='.DB_HOST.';dbname='.DB_NAME.';charset='.DB_CHARSET, DB_USER, DB_PASS);
+            $conn = new PDO(DB_ENGINE.':host='.DB_HOST.';dbname='.DB_NAME.';charset='.DB_CHARSET, DB_USER, DB_PASSWORD);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             //__debug('Connected');
         }
